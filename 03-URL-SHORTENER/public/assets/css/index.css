@@ -1,0 +1,45 @@
+body{
+	padding: 50px 15%;
+	color: #fdfdfd;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	font-family: Helvetica, Arial, Serif;
+	text-align: center;
+	color: #222;
+	letter-spacing: 0.5px;
+	line-height: 1.5rem;
+	cursor: default;
+}
+
+a{
+	color: blue;
+}
+a:hover{
+	color: #00ccff;
+}
+
+.input-form{
+  padding: 5px;
+  color: black;
+  border-radius: 10%;
+  cursor: text;
+  letter-spacing: .5px;
+}
+  .input-form:hover{
+    border-color: #00ccff;  	
+  }
+
+.button-default{
+  padding: 10px;
+  color: black;
+  border-radius: 5%;
+  cursor: pointer;
+  letter-spacing: .5px;
+  background: #eee;
+  border-color: #e0e0e0;
+}
+  .button-default:hover{
+    background: #dfdfdf;
+    border-color: #ccc;
+  }
