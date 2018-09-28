@@ -1,6 +1,5 @@
-const 	express = require('express'),
-		router = express.Router();
-
+const express = require('express');
+const router = express.Router();
 
 router.get('/', (request, response) => {
 	response.json({
@@ -10,6 +9,5 @@ router.get('/', (request, response) => {
     moreInfo: 'https://www.freecodecamp.org/challenges/request-header-parser-microservice'
 	});
 });
-
 
 module.exports = router;
