@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>04-EXERCISE-TRACKER</title>
+	</head>
+	<style>
+		body {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 30px 12%;
+			background: #fcfcfc;
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+		}
+		.subtitle {
+			font-size: 18px;
+			font-weight: 600;
+			margin: 30px auto;
+			text-decoration: underline;
+		}
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			width: min-content;
+			align-items: center;
+			justify-content: center;
+			margin: 18px auto;
+		}
+		input {
+			margin: 3px;
+			min-width: 180px;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<h1>Exercise tracker</h1>
+			<p>Project #4 from freecodecamp's challenges</p>
+			<div class="subtitle">POST</div>
+			<div>Create New User</div>
+			<form action="/api/exercise/new-user" method="post">
+				<input type="text" name="username" placeholder="username*" maxlength="10" required />
+				<input type="submit" value="Submit" />
+			</form>
+			<div>Add exercise</div>
+			<form action="/api/exercise/add" method="post">
+				<input type="text" name="username" placeholder="username*" maxlength="10" required />
+				<input type="text" name="description" placeholder="description*" maxlength="60" required />
+				<input type="number" name="duration" placeholder="duration*" min="0" max="240" required />
+				<input type="date" name="date" placeholder="date (yyyy-mm-dd)" />
+				<input type="submit" value="Submit" />
+			</form>
+			<div class="subtitle">GET</div>
+			<p>/api/exercise/log?{username}[&amp;from][&amp;to][&amp;limit]</p>
+			<a target="_blank" href="/api/exercise/log?username=a&from=2010-01-01&to=2016-01-01&limit=3">
+				/api/exercise/log?{userId}[&from][&to][&limit]
+			</a>
+		</div>
+	</body>
+</html>

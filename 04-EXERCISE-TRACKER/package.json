@@ -1,0 +1,34 @@
+{
+  "name": "04-EXERCISE-TRACKER",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nico Diz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.2",
+    "mongoose": "^5.0.6",
+    "nodemon": "^1.15.1",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "@fizzmod/eslint-config": "^2.0.1",
+    "eslint": "^5.9.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "nodemon": "^1.18.9"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "./hooks/commit-msg $HUSKY_GIT_PARAMS"
+    }
+  }
+}
